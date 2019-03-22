@@ -1,0 +1,16 @@
+html, body, h1, h2, h3, h4, p, dl, dt, dd, ul, li, ol {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+i, em {
+  font-style: normal;
+}

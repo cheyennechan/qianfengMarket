@@ -5,7 +5,7 @@
 			<li><router-link to="/home/index">首页</router-link></li>
 			<li><router-link to="/home/classify">分类</router-link></li>
 			<li><router-link to="/home/cart">购物车</router-link></li>
-			<li><router-link to="/home/user">我的</router-link></li>
+			<li><router-link to="/home/user"><i class="fa fa-user-o"></i></router-link></li>
 		</ul>
   </div>
 </template>
