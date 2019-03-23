@@ -180,15 +180,38 @@
         <div class="swiper-pagination"></div>
       </div>
     </div>
+    <!-- 商城公告商家入驻 -->
+    <div class="newsMerchant">
+      <div class="roll">
+        <span>
+          <router-link to>
+            <img src="../../../static/img/news_tit.png">
+          </router-link>
+        </span>
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" v-for="item in list">
+              <router-link to>{{item}}</router-link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="merchant">
+        <router-link to>
+          <img src="../../../static/img/bg_sj.jpg">
+        </router-link>
+      </div>
+    </div>
   </div>
 </template>
 
 <style lang="scss">
-   
+// banner轮播
 .indexBanner {
-   .swiper-pagination-bullet-active{
-      background: #ffe037 !important;
-    }
+  .swiper-pagination-bullet-active {
+    background: #ffe037 !important;
+  }
   .swiper-container {
     width: 100%;
     height: 11.25rem;
@@ -198,12 +221,14 @@
     }
   }
 }
+// 图标导航
 .iconNav {
+  border-bottom: 0.38rem solid #f1f1f1;
   background: #fff;
   .swiper-pagination-bullet-active {
     background: #007aff !important;
   }
-  .swiper-pagination-bullet{
+  .swiper-pagination-bullet {
     width: 12px;
     height: 2px;
     border-radius: 0;
@@ -227,12 +252,58 @@
     }
   }
 }
+// 商城公告商家入驻
+.newsMerchant {
+  border-bottom: .38rem solid #f1f1f1;
+  .roll {
+    height: 1.25rem;
+    padding: 2%;
+    span {
+      margin-top: 0.6%;
+      float: left;
+      width: 20%;
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+    .swiper-container {
+      width: 78%;
+      height: 1.25rem;
+      overflow: hidden;
+      font-size: 0.38rem;
+      float: right;
+      .swiper-slide {
+        height: 1.25rem;
+        line-height: 1.25rem;
+        a {
+          color: #666;
+        }
+      }
+    }
+  }
+  .merchant {
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
 </style>
 
 <script>
 import Swiper from "swiper";
 import "swiper/dist/css/swiper.css";
 export default {
+  data() {
+    return {
+      list: [
+        "定了！今年五一放假四天",
+        "周末华南气温“触底”，北方暖意逐渐回归",
+        "贾跃亭又有合伙人了?"
+      ]
+    };
+  },
   mounted() {
     var bannerSwiper = new Swiper(".indexBanner .swiper-container", {
       loop: true, // 循环模式
@@ -250,6 +321,14 @@ export default {
       // 分页器
       pagination: {
         el: ".swiper-pagination"
+      }
+    });
+    var newsSwiper = new Swiper(".newsMerchant .swiper-container", {
+      direction: "vertical", // 垂直切换选项
+      loop: true, // 循环模式选项
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
       }
     });
   }
