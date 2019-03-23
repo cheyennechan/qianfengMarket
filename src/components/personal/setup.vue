@@ -39,7 +39,7 @@ export default {
 </script>
 <style scoped lang="scss">
 .box {
-  background: #f5f5f5;
+  background: #f5f5f5;padding-bottom: 21.875rem;
 }
 .header {
   text-align: center;
