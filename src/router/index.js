@@ -8,6 +8,7 @@ import LoginUp from '@/components/homePage/loginUp'
 import Classify from '@/components/classify/classify'
 import User from '@/components/personal/user'
 import Cart from '@/components/cart/cart'
+import Setup from '@/components/personal/setup'
 
 Vue.use(Router)
 
@@ -59,7 +60,13 @@ export default new Router({
           path: '/home/user',
           name: 'user',
           component: User
+        },
+        {
+          path: '/home/setup',
+          name: 'setup',
+          component: Setup
         }
+
       ]
     }
   ]

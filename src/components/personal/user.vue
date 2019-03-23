@@ -1,5 +1,6 @@
 <template>
   <div class="psal">
+    	<router-view />
     <!-- 头部 -->
     <div class="heard">
       <div class="heard-top">
@@ -8,7 +9,7 @@
           <span>{{Username}}</span>
           <em>{{Rank}}</em>
         </div>
-        <div class="set">{{Sets}}</div>
+        <div class="set"><router-link to="setup">{{Sets}}</router-link>  </div>
       </div>
       <ul>
         <li v-for="val in Heard">
@@ -151,9 +152,9 @@ export default {
       border-radius: 35% 35%;
       border: 0.09375rem solid #59b6f8;
       font-size: 0.75rem;
-      color: #59b6f8;
       text-align: center;
       line-height: 1.5625rem;
+      a{color: #59b6f8;}
     }
   }
   ul {
