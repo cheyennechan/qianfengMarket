@@ -229,7 +229,7 @@ export default {
 }
 //尾部 tail
 .tail {
-  padding: 1.40625rem 0 1.5625rem;
+  padding: 1.40625rem 0 3.5625rem;
   ul {
     display: flex;
     padding: 0 0.9375rem;
