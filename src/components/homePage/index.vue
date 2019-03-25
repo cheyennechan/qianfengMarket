@@ -1,5 +1,21 @@
 <template>
   <div>
+    <!-- 头部 -->
+    <div class="indexHeader">
+      <div class="titleLogo">
+        <img src="../../../static/img/logo.png" alt>
+      </div>
+      <div class="titleSearch">
+        <router-link to>
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input readonly type="text" placeholder="零食">
+        </router-link>
+      </div>
+      <div class="indexLoginIn">
+        <span>登录</span>
+        <i class="fa fa-user-o"></i>
+      </div>
+    </div>
     <!-- banner轮播 -->
     <div class="indexBanner">
       <div class="swiper-container">
@@ -435,6 +451,54 @@
 </template>
 
 <style lang="scss">
+// 头部
+.indexHeader {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  height: 2.63rem;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 80%);
+  .titleLogo {
+    width: 24%;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+  .titleSearch {
+    height: 1.88rem;
+    line-height: 1.88rem;
+    border-radius: 50px;
+    width: 55%;
+    background: #fff;
+    margin: 0 .31rem;
+    i {
+      font-size: 0.81rem;
+      margin:0 .31rem;
+      color: #757575;
+    }
+    input{
+      width: 80%;
+      border: 0;
+      outline: none;
+      font-size: 0.75rem;
+    }
+  }
+  .indexLoginIn{
+    width: 14.5%;
+    text-align: left;
+    line-height: .56rem;
+    font-size: .81rem;
+    color: #fff;
+    i{
+      color: #D5CBA9;
+      font-size: 1.2rem;
+    }
+  }
+}
 // banner轮播
 .indexBanner {
   .swiper-pagination-bullet-active {
@@ -472,9 +536,9 @@
       width: 25%;
       text-align: center;
       margin-bottom: 0.38rem;
-      a{
+      a {
         color: #888;
-        font-size: .69rem;
+        font-size: 0.69rem;
       }
       img {
         width: 50%;
