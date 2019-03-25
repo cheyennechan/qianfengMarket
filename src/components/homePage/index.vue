@@ -410,13 +410,15 @@
     <div class="loadMore">
       加载更多···
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+ <div class="tail">
+      <ul>
+        <li v-for="val in tailul">
+          <a href="#">{{val.name}}</a>
+          <span>{{val.sp}}</span>
+        </li>
+      </ul>
+      <p v-for="val in tailp">{{val.name}}</p>
+    </div>
   </div>
 </template>
 
@@ -650,7 +652,34 @@
   font-size: .69rem;
   padding: 2%
 }
-
+//尾部 tail
+.tail {
+  padding: 1.40625rem 0 1.5625rem;
+  ul {
+    display: flex;
+    padding: 0 0.9375rem;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    li {
+      font-size: 0.6875rem;
+      a {
+        padding-bottom: 0.125rem;
+        border-bottom: 0.0625rem solid #a8a8a5;
+        color: #a8a8a5;
+      }
+      span {
+        font-size: 0.375rem;
+        margin-left: 0.3125rem;
+        color: #e4e443;
+      }
+    }
+  }
+  p {
+    text-align: center;
+    margin-bottom: 0.6875rem;
+    font-size: 0.75rem;
+  }
+}
 </style>
 
 <script>
@@ -663,6 +692,17 @@ export default {
         "定了！今年五一放假四天",
         "周末华南气温“触底”，北方暖意逐渐回归",
         "贾跃亭又有合伙人了?"
+      ],
+       tailul: [
+        { name: "关于我们", sp: ">" },
+        { name: "购物指南", sp: ">" },
+        { name: "支付方式", sp: ">" },
+        { name: "售后服务", sp: ">" }
+      ],
+      tailp: [
+        { name: "© 2019 XX公司  ICP备XXXXXXXX号" },
+        { name: "全国统一服务热线：400-888-8888" },
+        { name: "技术支持：小晏(www.666.com)" }
       ]
     };
   },
