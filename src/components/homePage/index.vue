@@ -34,146 +34,160 @@
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <router-link to>
-              <dl>
+            <dl>
+              <router-link to>
                 <dt>
                   <img src="../../../static/img/nav_icon01.png">
                 </dt>
                 <dd>饮料饮品</dd>
-              </dl>
-            </router-link>
-            <router-link to>
-              <dl>
+              </router-link>
+            </dl>
+
+            <dl>
+              <router-link to>
                 <dt>
                   <img src="../../../static/img/nav_icon02.png">
                 </dt>
                 <dd>休闲零食</dd>
-              </dl>
-            </router-link>
-            <router-link to>
-              <dl>
+              </router-link>
+            </dl>
+
+            <dl>
+              <router-link to>
                 <dt>
                   <img src="../../../static/img/nav_icon03.png">
                 </dt>
                 <dd>新鲜水果</dd>
-              </dl>
-            </router-link>
-            <router-link to>
-              <dl>
+              </router-link>
+            </dl>
+
+            <dl>
+              <router-link to>
                 <dt>
                   <img src="../../../static/img/nav_icon04.png">
                 </dt>
                 <dd>散称零食</dd>
-              </dl>
-            </router-link>
-            <router-link to>
-              <dl>
+              </router-link>
+            </dl>
+
+            <dl>
+              <router-link to>
                 <dt>
                   <img src="../../../static/img/nav_icon05.png">
                 </dt>
                 <dd>方便面</dd>
-              </dl>
-            </router-link>
-            <router-link to>
-              <dl>
+              </router-link>
+            </dl>
+
+            <dl>
+              <router-link to>
                 <dt>
                   <img src="../../../static/img/nav_icon06.png">
                 </dt>
                 <dd>酒水专区</dd>
-              </dl>
-            </router-link>
-            <router-link to>
-              <dl>
+              </router-link>
+            </dl>
+
+            <dl>
+              <router-link to>
                 <dt>
                   <img src="../../../static/img/nav_icon07.png">
                 </dt>
                 <dd>冲调食品</dd>
-              </dl>
-            </router-link>
-            <router-link to>
-              <dl>
+              </router-link>
+            </dl>
+
+            <dl>
+              <router-link to>
                 <dt>
                   <img src="../../../static/img/nav_icon08.png">
                 </dt>
                 <dd>牛奶</dd>
-              </dl>
-            </router-link>
+              </router-link>
+            </dl>
           </div>
           <div class="swiper-slide">
-            <router-link to>
-              <dl>
+            <dl>
+              <router-link to>
                 <dt>
                   <img src="../../../static/img/nav_icon01.png">
                 </dt>
                 <dd>茗茶</dd>
-              </dl>
-            </router-link>
-            <router-link to>
-              <dl>
+              </router-link>
+            </dl>
+
+            <dl>
+              <router-link to>
                 <dt>
                   <img src="../../../static/img/nav_icon02.png">
                 </dt>
                 <dd>调味食品</dd>
-              </dl>
-            </router-link>
-            <router-link to>
-              <dl>
+              </router-link>
+            </dl>
+
+            <dl>
+              <router-link to>
                 <dt>
                   <img src="../../../static/img/nav_icon03.png">
                 </dt>
                 <dd>南北干货</dd>
-              </dl>
-            </router-link>
-            <router-link to>
-              <dl>
+              </router-link>
+            </dl>
+
+            <dl>
+              <router-link to>
                 <dt>
                   <img src="../../../static/img/nav_icon04.png">
                 </dt>
                 <dd>文体用品</dd>
-              </dl>
-            </router-link>
-            <router-link to>
-              <dl>
+              </router-link>
+            </dl>
+
+            <dl>
+              <router-link to>
                 <dt>
                   <img src="../../../static/img/nav_icon05.png">
                 </dt>
                 <dd>办公用品</dd>
-              </dl>
-            </router-link>
-            <router-link to>
-              <dl>
+              </router-link>
+            </dl>
+
+            <dl>
+              <router-link to>
                 <dt>
                   <img src="../../../static/img/nav_icon06.png">
                 </dt>
                 <dd>生活百货</dd>
-              </dl>
-            </router-link>
-            <router-link to>
-              <dl>
+              </router-link>
+            </dl>
+
+            <dl>
+              <router-link to>
                 <dt>
                   <img src="../../../static/img/nav_icon07.png">
                 </dt>
                 <dd>生活用纸</dd>
-              </dl>
-            </router-link>
-            <router-link to>
-              <dl>
+              </router-link>
+            </dl>
+
+            <dl>
+              <router-link to>
                 <dt>
                   <img src="../../../static/img/nav_icon08.png">
                 </dt>
                 <dd>女神用品</dd>
-              </dl>
-            </router-link>
+              </router-link>
+            </dl>
           </div>
           <div class="swiper-slide">
-            <router-link to>
-              <dl>
+            <dl>
+              <router-link to>
                 <dt>
                   <img src="../../../static/img/nav_icon08.png">
                 </dt>
                 <dd>护肤洗涤</dd>
-              </dl>
-            </router-link>
+              </router-link>
+            </dl>
           </div>
         </div>
         <!-- 如果需要分页器 -->
@@ -404,13 +418,11 @@
         </dl>
       </div>
       <div class="moreLink">
-        <router-link to="">更多新品></router-link>
+        <router-link to>更多新品></router-link>
       </div>
     </div>
-    <div class="loadMore">
-      加载更多···
-    </div>
- <div class="tail">
+    <div class="loadMore">加载更多···</div>
+    <div class="tail">
       <ul>
         <li v-for="val in tailul">
           <a href="#">{{val.name}}</a>
@@ -457,10 +469,13 @@
     display: flex;
     flex-wrap: wrap;
     dl {
-      flex: 1;
+      width: 25%;
       text-align: center;
-      color: #888;
       margin-bottom: 0.38rem;
+      a{
+        color: #888;
+        font-size: .69rem;
+      }
       img {
         width: 50%;
         height: 50%;
@@ -599,7 +614,7 @@
   }
 }
 // 新品推荐
-.newProducts{
+.newProducts {
   .newProdCont {
     display: flex;
     flex-wrap: wrap;
@@ -607,18 +622,18 @@
       width: 31.7333%;
       margin: 0 0.8%;
       margin-bottom: 1%;
-      dd{
-        p{
+      dd {
+        p {
           color: #666;
-          font-size: .69rem;
-          line-height: .88rem;
+          font-size: 0.69rem;
+          line-height: 0.88rem;
           height: 1.68rem;
           margin-top: 4%;
           overflow: hidden;
         }
-        div{
+        div {
           color: #f00;
-          font-size: .81rem;
+          font-size: 0.81rem;
           line-height: 160%;
           margin: 0 2% 4%;
         }
@@ -628,9 +643,9 @@
       }
     }
   }
-  .moreLink{
+  .moreLink {
     padding: 3% 0 7%;
-    a{
+    a {
       display: block;
       width: 50%;
       background-color: #2691e1;
@@ -639,18 +654,17 @@
       margin: 0 auto;
       height: 1.88rem;
       line-height: 1.88rem;
-      font-size: .81rem;
+      font-size: 0.81rem;
       color: #fff;
     }
-    
   }
 }
-.loadMore{
+.loadMore {
   background-color: #f0f0f0;
   text-align: center;
   color: #999;
-  font-size: .69rem;
-  padding: 2%
+  font-size: 0.69rem;
+  padding: 2%;
 }
 //尾部 tail
 .tail {
@@ -678,6 +692,7 @@
     text-align: center;
     margin-bottom: 0.6875rem;
     font-size: 0.75rem;
+    color: #a8a8a5;
   }
 }
 </style>
@@ -693,7 +708,7 @@ export default {
         "周末华南气温“触底”，北方暖意逐渐回归",
         "贾跃亭又有合伙人了?"
       ],
-       tailul: [
+      tailul: [
         { name: "关于我们", sp: ">" },
         { name: "购物指南", sp: ">" },
         { name: "支付方式", sp: ">" },
