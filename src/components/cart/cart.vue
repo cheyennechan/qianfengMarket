@@ -127,7 +127,7 @@ export default {
 	.dibu{
 		display: flex;
 		position: fixed;
-		bottom: 2.6rem;
+		bottom: 3rem;
 		width: 100%;
 		background: #fff;
 		z-index: 999;
